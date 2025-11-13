@@ -1,0 +1,797 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Free AI Readiness Assessment - Nu Frequency</title>
+    <meta name="description" content="Discover how much time and money your business could save with AI automation. Free 3-minute assessment.">
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .gradient-text {
+            background: linear-gradient(to right, #2563eb, #7c3aed);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    
+    <!-- Header -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 py-6">
+            <div class="flex justify-between items-center">
+                <h1 class="text-2xl font-bold gradient-text">Nu Frequency</h1>
+                <a href="#assessment" class="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition">
+                    Take Assessment
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-br from-blue-50 via-white to-purple-50 py-20">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <div class="inline-block bg-blue-100 text-blue-700 px-4 py-2 rounded-full text-sm font-semibold mb-6">
+                Free Assessment • 3 Minutes • No Credit Card
+            </div>
+            
+            <h1 class="text-5xl md:text-6xl font-bold text-gray-900 mb-6">
+                How Much Could AI Save <span class="gradient-text">Your Business?</span>
+            </h1>
+            
+            <p class="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
+                Small businesses using AI automation handle 55% more clients, save 20+ hours per month, 
+                and reduce operational costs by up to $150K annually.
+            </p>
+
+            <div class="flex flex-col sm:flex-row gap-4 justify-center mb-12">
+                <a href="#assessment" class="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-8 py-4 rounded-lg font-semibold text-lg hover:shadow-xl transition">
+                    Discover Your Potential →
+                </a>
+                <a href="#how-it-works" class="bg-white text-gray-700 px-8 py-4 rounded-lg font-semibold text-lg border-2 border-gray-300 hover:border-blue-500 transition">
+                    How It Works
+                </a>
+            </div>
+
+            <!-- Social Proof -->
+            <div class="grid grid-cols-3 gap-8 max-w-2xl mx-auto">
+                <div>
+                    <div class="text-3xl font-bold text-blue-600">91%</div>
+                    <div class="text-sm text-gray-600">See higher revenue</div>
+                </div>
+                <div>
+                    <div class="text-3xl font-bold text-purple-600">20+</div>
+                    <div class="text-sm text-gray-600">Hours saved monthly</div>
+                </div>
+                <div>
+                    <div class="text-3xl font-bold text-indigo-600">55%</div>
+                    <div class="text-sm text-gray-600">More clients handled</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section id="how-it-works" class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">How This Assessment Works</h2>
+                <p class="text-xl text-gray-600">Get your personalized AI roadmap in 3 simple steps</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="text-center p-6">
+                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-2xl font-bold text-blue-600">1</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Answer 12 Questions</h3>
+                    <p class="text-gray-600">Tell us about your business operations, challenges, and goals. Takes just 3 minutes.</p>
+                </div>
+
+                <div class="text-center p-6">
+                    <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-2xl font-bold text-purple-600">2</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Get Your Scores</h3>
+                    <p class="text-gray-600">Instantly see your AI Readiness Score and Cost Savings Potential with personalized insights.</p>
+                </div>
+
+                <div class="text-center p-6">
+                    <div class="w-16 h-16 bg-indigo-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-2xl font-bold text-indigo-600">3</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Get Your Roadmap</h3>
+                    <p class="text-gray-600">Receive actionable recommendations tailored to your business situation.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- What You'll Discover -->
+    <section class="py-20 bg-gray-50">
+        <div class="max-w-4xl mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">What You'll Discover</h2>
+            </div>
+
+            <div class="space-y-4">
+                <div class="bg-white p-6 rounded-xl shadow-sm border-l-4 border-blue-500">
+                    <h3 class="font-bold text-gray-900 mb-2">💰 Your Savings Potential</h3>
+                    <p class="text-gray-600">Estimated annual cost savings based on your current operations ($5K-$150K+)</p>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-sm border-l-4 border-purple-500">
+                    <h3 class="font-bold text-gray-900 mb-2">⚡ Your Readiness Score</h3>
+                    <p class="text-gray-600">How prepared your business is to implement AI automation</p>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-sm border-l-4 border-indigo-500">
+                    <h3 class="font-bold text-gray-900 mb-2">🎯 Quick Win Opportunities</h3>
+                    <p class="text-gray-600">Specific processes you can automate for immediate ROI</p>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-sm border-l-4 border-green-500">
+                    <h3 class="font-bold text-gray-900 mb-2">📊 Custom Roadmap</h3>
+                    <p class="text-gray-600">Step-by-step recommendations based on your unique situation</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Assessment Section - The actual assessment is embedded below -->
+    <section id="assessment" class="py-20 bg-gradient-to-br from-blue-50 via-white to-purple-50">
+        <div class="max-w-5xl mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">Take Your Free Assessment</h2>
+                <p class="text-xl text-gray-600">3 minutes to discover your automation potential</p>
+            </div>
+
+            <!-- Assessment App Root -->
+            <div id="assessment-root"></div>
+        </div>
+    </section>
+
+    <!-- Trust Section -->
+    <section class="py-20 bg-white">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold text-gray-900 mb-8">Trusted by Forward-Thinking Businesses</h2>
+            
+            <div class="grid md:grid-cols-2 gap-8 mb-12">
+                <div class="bg-gray-50 p-6 rounded-xl">
+                    <p class="text-gray-700 italic mb-4">"This assessment revealed we were wasting 35 hours per week on tasks that could be automated. Within 60 days of implementing their recommendations, we were handling 40% more clients."</p>
+                    <p class="font-semibold text-gray-900">— Sarah M., Accounting Firm Owner</p>
+                </div>
+
+                <div class="bg-gray-50 p-6 rounded-xl">
+                    <p class="text-gray-700 italic mb-4">"The roadmap was spot-on. We started with their 'quick win' suggestions and saw immediate results. Now we're scaling without hiring."</p>
+                    <p class="font-semibold text-gray-900">— James T., CPA Practice</p>
+                </div>
+            </div>
+
+            <div class="bg-blue-50 border-2 border-blue-200 rounded-xl p-8">
+                <h3 class="text-2xl font-bold text-gray-900 mb-4">🔒 Your Information is Safe</h3>
+                <p class="text-gray-600">
+                    We take your privacy seriously. Your assessment data is confidential and will only be used 
+                    to generate your personalized report. No spam, ever.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 bg-gradient-to-r from-blue-600 to-purple-600 text-white">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <h2 class="text-4xl font-bold mb-4">Ready to Transform Your Business?</h2>
+            <p class="text-xl text-blue-100 mb-8">
+                Join the growing number of businesses leveraging AI to scale efficiently
+            </p>
+            <a href="#assessment" class="inline-block bg-white text-blue-600 px-8 py-4 rounded-lg font-bold text-lg hover:shadow-2xl transition">
+                Take the Free Assessment Now →
+            </a>
+            <p class="mt-6 text-blue-200 text-sm">No credit card required • Results in 3 minutes</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-400 py-12">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="grid md:grid-cols-3 gap-8 mb-8">
+                <div>
+                    <h3 class="text-white font-bold mb-4">Nu Frequency</h3>
+                    <p class="text-sm">Transforming small businesses with AI automation.</p>
+                </div>
+                <div>
+                    <h4 class="text-white font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#assessment" class="hover:text-white">Take Assessment</a></li>
+                        <li><a href="#how-it-works" class="hover:text-white">How It Works</a></li>
+                        <li><a href="#" class="hover:text-white">About Us</a></li>
+                        <li><a href="#" class="hover:text-white">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-semibold mb-4">Contact</h4>
+                    <p class="text-sm">Email: hello@nufrequency.com</p>
+                    <p class="text-sm">Phone: (555) 123-4567</p>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 pt-8 text-center text-sm">
+                <p>&copy; 2025 Nu Frequency. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Assessment React Component - Embedded directly -->
+    <script type="text/babel">
+        const { useState } = React;
+
+        // Lucide React icons as inline SVGs
+        const ArrowRight = ({ size = 24 }) => (
+            <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+        );
+
+        const ArrowLeft = ({ size = 24 }) => (
+            <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <line x1="19" y1="12" x2="5" y2="12"></line>
+                <polyline points="12 19 5 12 12 5"></polyline>
+            </svg>
+        );
+
+        const Zap = ({ size = 24 }) => (
+            <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+            </svg>
+        );
+
+        const TrendingUp = ({ size = 24 }) => (
+            <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline>
+                <polyline points="17 6 23 6 23 12"></polyline>
+            </svg>
+        );
+
+        const CheckCircle = ({ size = 24 }) => (
+            <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                <polyline points="22 4 12 14.01 9 11.01"></polyline>
+            </svg>
+        );
+
+        const AlertCircle = ({ size = 24 }) => (
+            <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <circle cx="12" cy="12" r="10"></circle>
+                <line x1="12" y1="8" x2="12" y2="12"></line>
+                <line x1="12" y1="16" x2="12.01" y2="16"></line>
+            </svg>
+        );
+
+        function AIReadinessAssessment() {
+            const [step, setStep] = useState(0);
+            const [answers, setAnswers] = useState({});
+            const [showResults, setShowResults] = useState(false);
+
+            const questions = [
+                {
+                    id: 'teamSize',
+                    category: 'Business Overview',
+                    question: 'How many people work in your business?',
+                    type: 'single',
+                    options: [
+                        { value: 1, label: 'Just me (solo)', points: 10 },
+                        { value: 5, label: '2-5 people', points: 15 },
+                        { value: 10, label: '6-10 people', points: 20 },
+                        { value: 15, label: '11-20 people', points: 15 },
+                        { value: 20, label: '20+ people', points: 10 }
+                    ]
+                },
+                {
+                    id: 'revenue',
+                    category: 'Business Overview',
+                    question: 'What\'s your approximate annual revenue?',
+                    type: 'single',
+                    options: [
+                        { value: 1, label: 'Under $250K', points: 8 },
+                        { value: 2, label: '$250K - $500K', points: 12 },
+                        { value: 3, label: '$500K - $1M', points: 18 },
+                        { value: 4, label: '$1M - $3M', points: 20 },
+                        { value: 5, label: '$3M+', points: 15 }
+                    ]
+                },
+                {
+                    id: 'painPoints',
+                    category: 'Current Challenges',
+                    question: 'Which of these keep you up at night? (Select all that apply)',
+                    type: 'multiple',
+                    options: [
+                        { value: 'capacity', label: 'We\'re at capacity - can\'t take more clients', points: 5 },
+                        { value: 'data-entry', label: 'Too much time on manual data entry', points: 5 },
+                        { value: 'errors', label: 'Too many errors in our processes', points: 4 },
+                        { value: 'slow', label: 'Everything takes longer than it should', points: 5 },
+                        { value: 'marketing', label: 'No time for marketing/growth', points: 4 },
+                        { value: 'client-comm', label: 'Client communication is overwhelming', points: 4 },
+                        { value: 'hiring', label: 'Can\'t afford to hire more people', points: 5 }
+                    ]
+                },
+                {
+                    id: 'manualHours',
+                    category: 'Current Challenges',
+                    question: 'How many hours per week does your team spend on repetitive manual tasks?',
+                    subtext: '(data entry, invoice processing, email follow-ups, etc.)',
+                    type: 'single',
+                    options: [
+                        { value: 1, label: 'Less than 10 hours', points: 5 },
+                        { value: 2, label: '10-20 hours', points: 10 },
+                        { value: 3, label: '20-40 hours', points: 20 },
+                        { value: 4, label: '40-60 hours', points: 25 },
+                        { value: 5, label: '60+ hours (basically all week)', points: 30 }
+                    ]
+                },
+                {
+                    id: 'turnAway',
+                    category: 'Growth Barriers',
+                    question: 'In the past 6 months, have you had to turn away clients or delay projects due to capacity?',
+                    type: 'single',
+                    options: [
+                        { value: 1, label: 'Never - we have plenty of capacity', points: 5 },
+                        { value: 2, label: 'Once or twice', points: 10 },
+                        { value: 3, label: 'Monthly', points: 20 },
+                        { value: 4, label: 'Weekly', points: 25 },
+                        { value: 5, label: 'Almost daily', points: 30 }
+                    ]
+                },
+                {
+                    id: 'techStack',
+                    category: 'Technology Adoption',
+                    question: 'What tools does your business currently use? (Select all)',
+                    type: 'multiple',
+                    options: [
+                        { value: 'accounting', label: 'Cloud accounting software (QuickBooks, Xero, etc.)', points: 4 },
+                        { value: 'crm', label: 'CRM system', points: 4 },
+                        { value: 'project', label: 'Project management tools', points: 3 },
+                        { value: 'cloud', label: 'Cloud storage (Google Drive, Dropbox)', points: 3 },
+                        { value: 'email', label: 'Professional email automation', points: 3 },
+                        { value: 'none', label: 'Mostly paper/Excel/basic email', points: 0 }
+                    ]
+                },
+                {
+                    id: 'techComfort',
+                    category: 'Technology Adoption',
+                    question: 'How would you describe your team\'s comfort level with new technology?',
+                    type: 'single',
+                    options: [
+                        { value: 1, label: '😰 Terrified - we avoid change', points: 5 },
+                        { value: 2, label: '😬 Hesitant but willing', points: 12 },
+                        { value: 3, label: '😊 Generally comfortable', points: 20 },
+                        { value: 4, label: '🚀 We love new tools!', points: 25 },
+                        { value: 5, label: '🤖 Already using some AI tools', points: 15 }
+                    ]
+                },
+                {
+                    id: 'processes',
+                    category: 'Operations',
+                    question: 'Are your key business processes documented?',
+                    type: 'single',
+                    options: [
+                        { value: 1, label: 'What documentation? It\'s all in our heads', points: 5 },
+                        { value: 2, label: 'Some informal notes here and there', points: 10 },
+                        { value: 3, label: 'Major processes are documented', points: 20 },
+                        { value: 4, label: 'Everything is well-documented and standardized', points: 25 }
+                    ]
+                },
+                {
+                    id: 'clientOnboarding',
+                    category: 'Operations',
+                    question: 'How long does it typically take to fully onboard a new client?',
+                    type: 'single',
+                    options: [
+                        { value: 1, label: '1-3 days', points: 5 },
+                        { value: 2, label: '1 week', points: 10 },
+                        { value: 3, label: '2-3 weeks', points: 20 },
+                        { value: 4, label: '1 month+', points: 25 },
+                        { value: 5, label: 'It varies wildly - no standard process', points: 15 }
+                    ]
+                },
+                {
+                    id: 'dataEntry',
+                    category: 'Operations',
+                    question: 'How much of your invoicing, expenses, and bookkeeping is still manual?',
+                    type: 'single',
+                    options: [
+                        { value: 1, label: 'Mostly automated already', points: 5 },
+                        { value: 2, label: 'About 25% manual', points: 10 },
+                        { value: 3, label: 'About 50% manual', points: 20 },
+                        { value: 4, label: 'About 75% manual', points: 25 },
+                        { value: 5, label: 'Almost everything is manual entry', points: 30 }
+                    ]
+                },
+                {
+                    id: 'growthGoal',
+                    category: 'Goals & Budget',
+                    question: 'What\'s your primary growth goal for the next 12 months?',
+                    type: 'single',
+                    options: [
+                        { value: 1, label: 'Survive and maintain current levels', points: 8 },
+                        { value: 2, label: 'Grow revenue by 10-25%', points: 15 },
+                        { value: 3, label: 'Grow revenue by 25-50%', points: 20 },
+                        { value: 4, label: 'Double our business', points: 25 },
+                        { value: 5, label: 'Work less while maintaining revenue', points: 18 }
+                    ]
+                },
+                {
+                    id: 'investmentReadiness',
+                    category: 'Goals & Budget',
+                    question: 'If automation could save you 20+ hours per week and help you grow, what would you invest?',
+                    type: 'single',
+                    options: [
+                        { value: 1, label: 'Under $2K', points: 5 },
+                        { value: 2, label: '$2K - $5K', points: 12 },
+                        { value: 3, label: '$5K - $10K', points: 20 },
+                        { value: 4, label: '$10K - $25K', points: 25 },
+                        { value: 5, label: '$25K+', points: 20 }
+                    ]
+                }
+            ];
+
+            const handleAnswer = (questionId, value, isMultiple = false) => {
+                if (isMultiple) {
+                    const currentAnswers = answers[questionId] || [];
+                    const newAnswers = currentAnswers.includes(value)
+                        ? currentAnswers.filter(v => v !== value)
+                        : [...currentAnswers, value];
+                    setAnswers({ ...answers, [questionId]: newAnswers });
+                } else {
+                    setAnswers({ ...answers, [questionId]: value });
+                }
+            };
+
+            const calculateScores = () => {
+                let readinessScore = 0;
+                let savingsScore = 0;
+
+                questions.forEach(question => {
+                    const answer = answers[question.id];
+                    
+                    if (question.type === 'multiple' && Array.isArray(answer)) {
+                        answer.forEach(value => {
+                            const option = question.options.find(opt => opt.value === value);
+                            if (option) {
+                                if (question.id === 'painPoints') {
+                                    savingsScore += option.points;
+                                } else if (question.id === 'techStack') {
+                                    readinessScore += option.points;
+                                }
+                            }
+                        });
+                    } else if (question.type === 'single') {
+                        const option = question.options.find(opt => opt.value === answer);
+                        if (option) {
+                            if (['techComfort', 'processes', 'techStack', 'investmentReadiness'].includes(question.id)) {
+                                readinessScore += option.points;
+                            }
+                            if (['manualHours', 'turnAway', 'dataEntry', 'clientOnboarding', 'growthGoal'].includes(question.id)) {
+                                savingsScore += option.points;
+                            }
+                            if (['teamSize', 'revenue'].includes(question.id)) {
+                                readinessScore += option.points * 0.5;
+                                savingsScore += option.points * 0.5;
+                            }
+                        }
+                    }
+                });
+
+                const maxReadiness = 115;
+                const maxSavings = 155;
+                
+                return {
+                    readiness: Math.min(Math.round((readinessScore / maxReadiness) * 100), 100),
+                    savings: Math.min(Math.round((savingsScore / maxSavings) * 100), 100)
+                };
+            };
+
+            const getReadinessLevel = (score) => {
+                if (score >= 80) return { label: 'Prime for Automation', color: 'text-green-600', bg: 'bg-green-100' };
+                if (score >= 60) return { label: 'Ready to Scale', color: 'text-blue-600', bg: 'bg-blue-100' };
+                if (score >= 40) return { label: 'Foundation Building', color: 'text-yellow-600', bg: 'bg-yellow-100' };
+                return { label: 'Early Stage', color: 'text-orange-600', bg: 'bg-orange-100' };
+            };
+
+            const getSavingsLevel = (score) => {
+                if (score >= 80) return { label: 'Massive Opportunity', color: 'text-purple-600', bg: 'bg-purple-100', savings: '$50K-150K+' };
+                if (score >= 60) return { label: 'High Potential', color: 'text-indigo-600', bg: 'bg-indigo-100', savings: '$30K-75K' };
+                if (score >= 40) return { label: 'Solid Returns', color: 'text-blue-600', bg: 'bg-blue-100', savings: '$15K-40K' };
+                return { label: 'Moderate Gains', color: 'text-teal-600', bg: 'bg-teal-100', savings: '$5K-20K' };
+            };
+
+            const nextStep = () => {
+                if (step < questions.length - 1) {
+                    setStep(step + 1);
+                } else {
+                    setShowResults(true);
+                    // Scroll to results
+                    setTimeout(() => {
+                        document.getElementById('assessment-root').scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    }, 100);
+                }
+            };
+
+            const prevStep = () => {
+                if (step > 0) setStep(step - 1);
+            };
+
+            const isStepAnswered = () => {
+                const currentQuestion = questions[step];
+                const answer = answers[currentQuestion.id];
+                
+                if (currentQuestion.type === 'multiple') {
+                    return Array.isArray(answer) && answer.length > 0;
+                }
+                return answer !== undefined;
+            };
+
+            const currentQuestion = questions[step];
+            const progress = ((step + 1) / questions.length) * 100;
+
+            if (showResults) {
+                const scores = calculateScores();
+                const readinessLevel = getReadinessLevel(scores.readiness);
+                const savingsLevel = getSavingsLevel(scores.savings);
+
+                return (
+                    <div className="bg-white rounded-2xl shadow-2xl p-8 md:p-12">
+                        <div className="text-center mb-8">
+                            <div className="inline-block bg-gradient-to-r from-blue-600 to-purple-600 text-white px-6 py-2 rounded-full text-sm font-semibold mb-4">
+                                Your AI Readiness Report
+                            </div>
+                            <h3 className="text-4xl font-bold text-gray-900 mb-2">Assessment Complete!</h3>
+                            <p className="text-gray-600">Here's what we discovered about your business</p>
+                        </div>
+
+                        <div className="grid md:grid-cols-2 gap-6 mb-8">
+                            <div className="bg-gradient-to-br from-blue-50 to-blue-100 rounded-xl p-6 border-2 border-blue-200">
+                                <div className="flex items-center justify-between mb-4">
+                                    <h4 className="text-lg font-semibold text-gray-800">AI Adoption Readiness</h4>
+                                    <Zap size={24} />
+                                </div>
+                                <div className="mb-4">
+                                    <div className="flex items-baseline">
+                                        <span className="text-5xl font-bold text-blue-600">{scores.readiness}</span>
+                                        <span className="text-2xl text-gray-500 ml-2">/100</span>
+                                    </div>
+                                </div>
+                                <div className={`inline-block ${readinessLevel.bg} ${readinessLevel.color} px-4 py-2 rounded-lg font-semibold text-sm`}>
+                                    {readinessLevel.label}
+                                </div>
+                                <div className="mt-4 h-3 bg-gray-200 rounded-full overflow-hidden">
+                                    <div 
+                                        className="h-full bg-gradient-to-r from-blue-500 to-blue-600 transition-all duration-1000"
+                                        style={{ width: `${scores.readiness}%` }}
+                                    />
+                                </div>
+                            </div>
+
+                            <div className="bg-gradient-to-br from-purple-50 to-purple-100 rounded-xl p-6 border-2 border-purple-200">
+                                <div className="flex items-center justify-between mb-4">
+                                    <h4 className="text-lg font-semibold text-gray-800">Cost Savings Potential</h4>
+                                    <TrendingUp size={24} />
+                                </div>
+                                <div className="mb-4">
+                                    <div className="flex items-baseline">
+                                        <span className="text-5xl font-bold text-purple-600">{scores.savings}</span>
+                                        <span className="text-2xl text-gray-500 ml-2">/100</span>
+                                    </div>
+                                </div>
+                                <div className={`inline-block ${savingsLevel.bg} ${savingsLevel.color} px-4 py-2 rounded-lg font-semibold text-sm`}>
+                                    {savingsLevel.label}
+                                </div>
+                                <div className="mt-4 h-3 bg-gray-200 rounded-full overflow-hidden">
+                                    <div 
+                                        className="h-full bg-gradient-to-r from-purple-500 to-purple-600 transition-all duration-1000"
+                                        style={{ width: `${scores.savings}%` }}
+                                    />
+                                </div>
+                                <p className="mt-3 text-sm text-gray-700">
+                                    <span className="font-semibold">Estimated Annual Savings:</span>
+                                    <span className="block text-lg font-bold text-purple-600 mt-1">{savingsLevel.savings}</span>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div className="bg-gray-50 rounded-xl p-6 mb-8">
+                            <h4 className="text-xl font-bold text-gray-900 mb-4">Key Insights & Recommendations</h4>
+                            
+                            {scores.readiness >= 70 && (
+                                <div className="flex items-start gap-3 mb-4 p-4 bg-green-50 rounded-lg border border-green-200">
+                                    <CheckCircle size={20} />
+                                    <div>
+                                        <p className="font-semibold text-green-900">Strong Foundation</p>
+                                        <p className="text-sm text-green-700">Your team's tech comfort and existing tools position you well for rapid AI adoption. You can likely see results within 30-60 days.</p>
+                                    </div>
+                                </div>
+                            )}
+
+                            {scores.savings >= 70 && (
+                                <div className="flex items-start gap-3 mb-4 p-4 bg-purple-50 rounded-lg border border-purple-200">
+                                    <TrendingUp size={20} />
+                                    <div>
+                                        <p className="font-semibold text-purple-900">High-Impact Opportunity</p>
+                                        <p className="text-sm text-purple-700">You're spending significant time on automatable tasks. Even modest automation could free 15-25 hours per week and allow you to take on more clients without new hires.</p>
+                                    </div>
+                                </div>
+                            )}
+
+                            {answers.turnAway >= 3 && (
+                                <div className="flex items-start gap-3 mb-4 p-4 bg-amber-50 rounded-lg border border-amber-200">
+                                    <AlertCircle size={20} />
+                                    <div>
+                                        <p className="font-semibold text-amber-900">Revenue at Risk</p>
+                                        <p className="text-sm text-amber-700">You're regularly turning away business due to capacity. Every declined client is lost revenue. Automation could help you capture this growth without proportional cost increases.</p>
+                                    </div>
+                                </div>
+                            )}
+
+                            {answers.dataEntry >= 4 && (
+                                <div className="flex items-start gap-3 mb-4 p-4 bg-blue-50 rounded-lg border border-blue-200">
+                                    <Zap size={20} />
+                                    <div>
+                                        <p className="font-semibold text-blue-900">Quick Win Opportunity</p>
+                                        <p className="text-sm text-blue-700">With significant manual data entry, you're a perfect candidate for OCR and automated categorization. This is typically the fastest ROI—results visible within weeks.</p>
+                                    </div>
+                                </div>
+                            )}
+
+                            {scores.readiness < 40 && (
+                                <div className="flex items-start gap-3 mb-4 p-4 bg-yellow-50 rounded-lg border border-yellow-200">
+                                    <AlertCircle size={20} />
+                                    <div>
+                                        <p className="font-semibold text-yellow-900">Foundation First</p>
+                                        <p className="text-sm text-yellow-700">Consider starting with process documentation and basic cloud tools before diving into AI. Building this foundation will make automation much more effective and easier to implement.</p>
+                                    </div>
+                                </div>
+                            )}
+                        </div>
+
+                        <div className="bg-gradient-to-r from-blue-600 to-purple-600 rounded-xl p-8 text-white">
+                            <h4 className="text-2xl font-bold mb-3">Ready to Transform Your Business?</h4>
+                            <p className="mb-6 text-blue-100">
+                                Based on your assessment, we've identified specific automation opportunities that could save you {savingsLevel.savings} annually while freeing your team to focus on high-value work.
+                            </p>
+                            <div className="space-y-3">
+                                <button className="w-full bg-white text-blue-600 hover:bg-blue-50 font-semibold py-4 px-6 rounded-lg transition-all duration-200 shadow-lg hover:shadow-xl">
+                                    Schedule Your Free 60-Minute Strategy Session
+                                </button>
+                                <button className="w-full bg-blue-700 hover:bg-blue-800 text-white font-semibold py-3 px-6 rounded-lg transition-all duration-200">
+                                    Download Your Full Report (PDF)
+                                </button>
+                            </div>
+                            <p className="text-sm text-blue-200 mt-4 text-center">
+                                No obligation. No sales pressure. Just a data-driven roadmap for your business.
+                            </p>
+                        </div>
+
+                        <button 
+                            onClick={() => {
+                                setShowResults(false);
+                                setStep(0);
+                                setAnswers({});
+                            }}
+                            className="mt-6 text-gray-600 hover:text-gray-900 text-sm font-medium flex items-center gap-2 mx-auto"
+                        >
+                            ← Start Over
+                        </button>
+                    </div>
+                );
+            }
+
+            return (
+                <div>
+                    <div className="mb-8">
+                        <div className="flex justify-between items-center mb-2">
+                            <span className="text-sm font-medium text-gray-700">
+                                Question {step + 1} of {questions.length}
+                            </span>
+                            <span className="text-sm font-medium text-gray-700">
+                                {Math.round(progress)}% Complete
+                            </span>
+                        </div>
+                        <div className="h-3 bg-gray-200 rounded-full overflow-hidden">
+                            <div 
+                                className="h-full bg-gradient-to-r from-blue-500 to-purple-500 transition-all duration-300"
+                                style={{ width: `${progress}%` }}
+                            />
+                        </div>
+                    </div>
+
+                    <div className="bg-white rounded-2xl shadow-xl p-8 md:p-10 mb-6">
+                        <div className="mb-6">
+                            <span className="inline-block bg-blue-100 text-blue-700 text-xs font-semibold px-3 py-1 rounded-full mb-4">
+                                {currentQuestion.category}
+                            </span>
+                            <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-2">
+                                {currentQuestion.question}
+                            </h3>
+                            {currentQuestion.subtext && (
+                                <p className="text-gray-500 text-sm">{currentQuestion.subtext}</p>
+                            )}
+                        </div>
+
+                        <div className="space-y-3">
+                            {currentQuestion.options.map((option) => {
+                                const isSelected = currentQuestion.type === 'multiple'
+                                    ? (answers[currentQuestion.id] || []).includes(option.value)
+                                    : answers[currentQuestion.id] === option.value;
+
+                                return (
+                                    <button
+                                        key={option.value}
+                                        onClick={() => handleAnswer(currentQuestion.id, option.value, currentQuestion.type === 'multiple')}
+                                        className={`w-full text-left p-4 rounded-xl border-2 transition-all duration-200 ${
+                                            isSelected
+                                                ? 'border-blue-500 bg-blue-50 shadow-md'
+                                                : 'border-gray-200 hover:border-blue-300 hover:bg-gray-50'
+                                        }`}
+                                    >
+                                        <div className="flex items-center justify-between">
+                                            <span className={`font-medium ${isSelected ? 'text-blue-900' : 'text-gray-700'}`}>
+                                                {option.label}
+                                            </span>
+                                            {isSelected && (
+                                                <CheckCircle size={20} />
+                                            )}
+                                        </div>
+                                    </button>
+                                );
+                            })}
+                        </div>
+                    </div>
+
+                    <div className="flex justify-between items-center">
+                        <button
+                            onClick={prevStep}
+                            disabled={step === 0}
+                            className={`flex items-center gap-2 px-6 py-3 rounded-lg font-semibold transition-all ${
+                                step === 0
+                                    ? 'text-gray-400 cursor-not-allowed'
+                                    : 'text-gray-700 hover:bg-white'
+                            }`}
+                        >
+                            <ArrowLeft size={20} />
+                            Back
+                        </button>
+
+                        <button
+                            onClick={nextStep}
+                            disabled={!isStepAnswered()}
+                            className={`flex items-center gap-2 px-8 py-3 rounded-lg font-semibold transition-all ${
+                                isStepAnswered()
+                                    ? 'bg-gradient-to-r from-blue-600 to-purple-600 text-white hover:shadow-lg'
+                                    : 'bg-gray-200 text-gray-400 cursor-not-allowed'
+                            }`}
+                        >
+                            {step === questions.length - 1 ? 'See My Results' : 'Next'}
+                            <ArrowRight size={20} />
+                        </button>
+                    </div>
+
+                    <p className="text-center text-sm text-gray-500 mt-6">
+                        Your information is confidential and will only be used to generate your personalized report.
+                    </p>
+                </div>
+            );
+        }
+
+        // Render the assessment in the designated section
+        ReactDOM.render(<AIReadinessAssessment />, document.getElementById('assessment-root'));
+    </script>
+
+</body>
+</html>
